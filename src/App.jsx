@@ -1,14 +1,28 @@
-import React from 'react'
-import "./app.css"
+import React from "react";
+import {
+    Navbar,
+    Home,
+    Popular,
+    Offer,
+    About,
+    Blog,
+    Footer,
+} from "./Components";
+
+import "./app.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      
-    </>
-  )
+    return (
+        <>
+            <Navbar />
+            {/* <Home />
+            <Popular />
+            <Offer />
+            <About />
+            <Blog />
+            <Footer /> */}
+        </>
+    );
 }
 
-export default App
+export default App;
