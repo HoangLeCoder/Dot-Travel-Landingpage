@@ -1,7 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
-body {
-  background: red;
+:root {
+  --primary-color: hsl(26, 93%, 50%);
+  --hover-color:hsl(26, 90%, 42%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0,0%,18%);
+  --text-color: hsl(240, 1%, 48%);
+  --white-color-deam: hsl(0, 0%, 93%);
+  --grey-bg: hsl(0,0%,96%);
+  --grey-text: rgb(190,190,190);
+  --input-color: hsl(330,12%,97%);
+}
+
+* {
+  @apply p-0 m-0 box-border font-[Poppins] duration-[.3s] ease-linear;
+}
+
+a {
+  @apply no-underline
+}
+
+li {
+  @apply list-none
+}
+
+.section {
+  @apply pt-16 pb-8 px-0
+}
+
+.container {
+  @apply px-6
+}
+
+.icon {
+  @apply text-2xl cursor-pointer
+}
+
+
+.btn {
+  @apply py-1.5 bg-[--primary-color] border-none outline-none rounded-[3rem] cursor-pointer
+}
+
+.btn a{
+  @apply text-white font-medium
+}
+
+.btn:hover a{
+  @apply text-white 
+}
+
+.secIntro{
+  @apply max-w-[70%] text-center mt-0 mx-auto mb-8
+}
+
+.secIntro .secTitle {
+ @apply text-black leading-6 pb-2
+}
+
+.secIntro p{
+  @apply text-xs text-[--text-color] font-medium
+}
+
+img, video {
+  @apply w-full h-auto
+}
+
+.input {
+  @apply text-[100%]
 }
